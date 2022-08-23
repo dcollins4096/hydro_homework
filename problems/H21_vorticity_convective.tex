@@ -1,0 +1,28 @@
+
+   \pts{4}  Starting with the evolution equation for vorticity, (4.20 in
+      the text), 
+      %$$\dbd{\vec{\omega}}{t} = \vec{\nabla} \times ( \vvec \times \vec{\omega} )     $$
+      and using some vector identity (and maybe (4.2)), write an equation for
+      the Lagrangian (full) derivative
+      $$\ddbd{\vec{\omega}}{t}$$ % = \left(\vec{\omega}\cdot\right) \vec{v}.$$ 
+      Assume inviscid and
+      incompressible.
+\solution{
+     \emph{Solution:}
+ 
+     \begin{align}
+       \dbd{\omega}{t} &= \nabla \times (\vvec \times \omega) \nn \\
+       \nabla \times (\vvec\times\omega) &= \vvec(\nabla \cdot \omega) \nn \\
+       &- \omega ( \nabla \cdot \vvec)  \nn \\
+       &+ (\omega \cdot \nabla) \vvec \nn \\
+       &- (\vvec \cdot \nabla) \omega \nn
+     \end{align}
+     The first term is zero because $\nabla \cdot \nabla \times \bf{F} = 0$ for
+     any vector field $\bf{F}$; the second is zero because we've assume
+     incompressibility; the last term moves to the right, and represents the
+     movement of $\omega$ by $\vvec$; the final term represents stretching of
+     vortex lines.
+     \begin{align}
+       \dDbD{\omega}{t} = (\omega \cdot \nabla) \vvec \nn
+     \end{align}
+}

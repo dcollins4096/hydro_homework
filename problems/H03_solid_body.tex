@@ -1,0 +1,56 @@
+  A flow in solid body rotation has velocity $$\vvec = \omegavec \times
+    \xvec$$
+    where $\omegavec = \Omega \hat{z}$
+    \begin{enumerate}
+     \item \pts{2} Work out $v_i$ using index notation and $\epsilon_{ijk}$. 
+          %\red{Next time say ``Find \emph{each component}''}
+
+\solution{
+          \emph{Solution}
+ 
+          If $x_k = x,y$ or $z$, 
+          \begin{align}
+              v_i &= \lct{ijk} \omega_j x_k \nn\\
+              v_x &= \lct{xyz} \omega_y z - \lct{xzy} \omega_z y \nn\\
+                  &=        0 - \Omega y\nn\\
+              v_y &= \lct{yzx} \omega_z x - \lct{yxz} \omega_x z\nn\\
+                  &=   \Omega x - 0\nn\\
+              v_z &= \lct{zxy} \omega_x y - \lct{zyx} \omega_y x\nn\\
+                  &= 0 - 0\nn
+          \end{align}
+          so
+          \begin{align}
+              v_x &= -\Omega y\nn\\
+              v_y &= \Omega x \nn\\
+              v_z &= 0\nn
+          \end{align}
+	  }
+      \item \pts{4} Find $\nabla \times \vvec$.   What does that tell you about the
+        field?
+
+	\solution{
+         \emph{Solution} 
+ 
+         $$\vvec = \omegavec \times \xvec = -\Omega y \hat{x} + \Omega x
+         \hat{y}$$
+         $$\nabla\times\vvec=2 \Omega$$ 
+ 
+         This tells you that the circulation of solid body rotation is uniform in
+         space, that the curl of rotating fluids is non-zero and equal to the
+         rotation rate. There are circular motions in this flow. (1 pt for saying something reasonable.)
+	 }
+
+      \item \pts{4} Find $\divv$.  What does that tell you about the field?
+
+	      \solution{
+         \emph{Solution} 
+         $$ \divv = 0$$
+ 
+         Acceptable solutions are either $\nabla\cdot\nabla\times X = 0$ for any
+         $X$, OR taking the divergence in full. (3 pts)
+ 
+         This means that there are no compressive motions in this flow.  (1 pt)
+	 }
+    \end{enumerate}
+    
+

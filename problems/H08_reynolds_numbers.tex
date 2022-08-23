@@ -1,0 +1,93 @@
+
+   \pts{3} \emph{(each)}  Estimate the Reynolds numbers for the following flows.
+    You'll have to find or estimate numbers, please cite sources where possible
+    and justify your assumptions.  
+    \begin{enumerate}
+      \item Water in a drinking straw.  (Think about which length scale is
+      relevant for the dynamics)
+
+\solution{
+         \emph{Solution:} 
+ 
+         To estimate $v$ and $L$, I got a drinking straw.  For $v$, I found that
+         I could empty the 20 cm straw in 0.5 s.  Thus $v=$ 40 cm/s.  For $L$, I
+         used the diameter of the straw, 0.5 cm.  I found the kinematic viscosity
+         (in the back of the book, or on the google) is 0.0114 $\rm{cm}^2\
+         \rm{s}^{-1}$.  Thus 
+         $$
+         Re = 20/0.0114=1754
+         $$
+         which gives a not-quite turbulent fluid.  
+ 
+         Why did I use the transverse width, rather than the length?  Because as
+         we learned when solving the pipe flow problem, the transverse length
+         scale is the dominant one (see equation (5.15)).  
+}
+
+      \item Three fluid ounces of whiskey, neat (no ice),  that has sat untouched
+        at the bar for 20 minutes.
+
+\solution{
+        \emph{Solution}
+ 
+        $v=0. Re=0$.  Please enjoy fluid dynamics homework responsibly.  
+} 
+
+      \item Two clouds of molecular hydrogen collide, each with a mass of $10^5 \msun$,
+        a number density of density of $100
+        \ \percc$ (that's hydrogen molecules per cubic centimeter), and a
+        temperature of  10 K. The relative velocity is 30 times their speed of sound.  Assume the viscosity
+        can be found as
+        $$\nu = a_T \lambda$$
+        where the thermal speed $a_T = \sqrt{k_B T/m}$ and the mean free path 
+        $\lambda=\frac{k_B^2 T^2}{\pi e^4 n}$.  (You cannot use this assumption
+        for the prior parts.)(Use $e=-4.8\times 10^{-10}$esu, using Coulombs
+        will give a very wrong answer.)
+
+\solution{
+        \emph{Solution}
+
+%%      \red{Note that in addition to not being correctly typed, this is not a
+%%      good formulation for the mean free path of a molecular cloud.  We should
+%%      use 1/$n\sigma$, where $\sigma$ is the area of an atom, roughly 
+%%      $(1 \rm{nm})^2$. The above is appropriate for fully ionized material.}
+
+         \begin{align}
+           L = (M/n)^{1/3} & \approx 35 \rm{pc} = 10^{20} \rm{cm}\\
+           v_{therm}  & \approx 2\times 10^4 \cms\\
+           \lambda &\approx 10^5 \rm{cm}\\
+           \nu &= 2\sci{9} \cmcmpers\\
+           Re &= 10^{16}
+         \end{align}
+ 
+        \red{Note that this is not a great approximation for $\lambda$ for
+        molecular clouds. A better approximation gives $\lambda = 10^{12}$ cm, and
+        $Re \approx 10^9$}
+}
+
+      \item The Reynolds number of a Keplerian disk (atomic hydrogen) around a
+        black hole with a mass of 1 \msun:
+        T = $10^4 K$, $n=10^{16} \percc$ with thickness $10^{10}$ cm.  Use the
+        same viscosity formulation as the molecular cloud problem.
+
+\solution{
+         \emph{Solution}
+ 
+         We find $\nu=10^3 \cmcmpers$ from plugging things in.  We can estimate v
+         from
+         $$
+         v^2 = \rm{G\ M}/R
+         $$
+         where we know G and M, but not $R$.  For the scale in the problem, we
+         use $L=h=10^{10} \rm{cm}$.   $R$, thus $v$, varies across the disk.
+         Leaving it as a free parameter, we find
+         $$
+         Re  = h \sqrt{\rm{G}{M}/R}/\nu = 10^{19} (\frac{R}{\rm{cm}})^{-1/2}.
+         $$
+         To estimate $R$, one possible solution is to approximate it by the mass,
+         density and thickness of the disk.  This gives $10^15$ cm, which gives
+         $Re = 10^{11}$.  Any reasonable estimate should be smaller than the
+         galaxy, at 25 kpc = $10^{22}$ cm, and even that gives $Re=10^8$.
+}
+ 
+    \end{enumerate}

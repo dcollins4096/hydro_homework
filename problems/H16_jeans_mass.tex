@@ -1,0 +1,46 @@
+
+      \pts{3} What is the Jeans Mass for a cloud of molecular hydrogen gas at 10 K and $1000
+     \rm{cm}^{-3}$ (that's particles of molecular hydrogen per cc.)
+
+\solution{
+     \emph{Solution}
+
+     Using (7.60) from the book, 
+
+     \begin{align}
+         c_s &= \sqrt{\frac{k_b T}{m_{x}}} = 1.9\sci{5}\cms\nn\\
+         m_x &= \rm{mass\ of\ partcle} \nn\\
+         &= 2.3 m_p = 3.84\sci{-24}\rm{g}\nn\\
+         \rho_0 &= 1000 m_x = 3.84\sci{-21}  \rm{g}\ \percc\nn\\
+         L_j &= 2 \pi \sqrt{c_s^2/(4 \pi G \rho_0)} = 2.09\sci{19} \rm{cm} = 0.68 pc \nn\\
+         M_j &= \frac{4 \pi}{3} L_j^3 \rho = 1.48\sci{35}\rm{g} = 74 M_\odot\nn
+     \end{align}
+     Realistically one should use $L_j/2$ in the definition of $M_j$, which
+     brings the answer down by a factor of 8.
+
+     The scaling provided by the great font of knowledge, Wikipedia, gives
+     \begin{align}
+         M_j = 2 M_\odot 
+         \left(\frac{c_s}{0.2
+         \kms}\right)\left(\frac{n}{1000\percc}\right)^{-1/2}.
+     \end{align}
+     This is obtained by using
+     \begin{align}
+         %c_s &= 0.2 \kms\nn\\
+         \rho&=3.9\sci{-21}\rm{g}\percc\nn\\
+         L_j &= \frac{c_s}{\sqrt{G \rho}}\nn\\
+         M_j &= \frac{4 \pi}{3}\rho (L_j/2)^3\nn
+     \end{align}
+     which gives 1.9 $M_\odot$ for the jeans mass of the cloud.  (Slightly
+     smaller due to the slightly smaller sound speed)
+
+     \item \pts{3} What is the Jeans Mass for $100 \rm{cm}^{-3}$ and $10^7$K?
+     (In the early universe, the gas can't cool, so this is more appropriate
+     for the first generation of stars)
+
+     Using (7.60) I find $M_j = 5.14\sci{44}\rm{g}= 2.6\sci{11}M_\odot$.
+
+     Using the version with fewer factors of $\pi$, I get 
+     $M_j=1.15\sci{43}\rm{g}=5.8\sci{9}M_\odot$
+     \end{enumerate}
+}

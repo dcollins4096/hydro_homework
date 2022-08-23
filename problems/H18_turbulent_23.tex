@@ -1,0 +1,24 @@
+
+   \pts{4} Derive the 2/3 law, $v_\ell^2 = \beta (\epsilon \ell)^{2/3}$
+      (like eqn. 8.22) from basic physical considerations.  Make sure you motivate
+      everything you say.  
+      %\emph{(Try it first.  A hint for what I'm looking for
+      %is on the next page.)}
+    
+
+\solution{
+    \emph{Solution:}
+
+    Within the inertial subrange, energy is not dissipated or injected.  Thus it
+    can only move from one scale to another (and one position in space to
+    another) but we're doing an ensemble average).  This transfer rate must
+    equal the input rate, $\epsilon$ (otherwise there would be a pile up).
+    $\epsilon$ can thus only depend on the size scale and the energy at that
+    scale.  By either dimensional analysis, or by assuming that the timescale
+    for transfer at a certain scale is $\ell/v_\ell$, the time for an eddy to
+    cross itself, one can find that
+    $$\epsilon \approx v_\ell^2/t = v_\ell^2/(\ell/v_\ell) = v_\ell^3/\ell$$
+    Thus,
+    $$v_\ell = C \epsilon^{1/3} \ell^{1/3}
+    v_\ell^2 = \beta \epsilon^{2/3} \ell^{2/3}.$$
+}

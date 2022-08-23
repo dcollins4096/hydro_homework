@@ -1,0 +1,8 @@
+#!/bin/tcsh
+
+foreach i (problems/*)
+	echo "\item \input{$i}"
+end
+
+
+#end

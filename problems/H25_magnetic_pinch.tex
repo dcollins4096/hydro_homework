@@ -1,0 +1,35 @@
+
+    Hydrostatics
+       \begin{enumerate}
+           \item \pts{5} Derive Equation 14.23 from 14.5.  State all the
+               assumptions made. Don't forget that the unit vectors have spatial
+               derivatives:
+               $\dbd{\hat{\theta}}{\theta} = -\hat{r}$ and
+               $\dbd{\hat{r}}{\theta}=\hat{\theta}$
+            \item \pts{3} What's the significance of the last term,
+                $\frac{B_\theta^2}{4 \pi r}$?
+            \item \pts{3} Given $\nabla\times B=\frac{4 \pi}{c} j$, assume
+                $B_z=0$, derive
+                (14.24) and solve it for $B_\theta$, assuming $j$ is constant.
+            \item \pts{3} Plug that back into (14.23) and solve for $p(r)$.
+            \item \pts{3} Given Alfven's theorem, describe why a radial pinching
+                is unstable.
+       \end{enumerate}
+
+\solution{
+       \emph{Solution}
+
+       A partial solution:
+
+       \begin{enumerate}
+           \item Set things to zero.  Do the calculus.  
+           \item $B\cdot\nabla B$ is the tension:  it's the change in the field
+               direction as it moves around the circle,
+               $\dbd{\hat{\theta}}{\theta}=-\hat{r}$
+           \item Plug in and integrate.
+           \item Integrate again.
+           \item Given a patch of fluid centered at $r=0$, as it contracts the
+               area decreases so the field should increase.  This increases the
+               inwardly-directed tension force.
+       \end{enumerate}
+}

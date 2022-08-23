@@ -1,0 +1,41 @@
+
+   Alfven Waves
+      \begin{enumerate}
+          \item \pts{2} Given a magnetic field strength of 4 $\mu$G, a density
+              of atomic hydrogen of
+              of 100 \percc, and a temperature of 1\sci{4}K, what is the Alfven
+              speed, in cm/s?  
+          \item \pts{2} What is the sound speed in this gas?
+          \item \pts{2} What is Plasma $\beta$?
+          \item \pts{2} If two clouds of atomic hydrogen collide at 15 km/s,
+              will sound waves, Alfven waves, or shocks be most important?
+      \end{enumerate}
+
+\solution{
+       \emph{Solution}
+ 
+       \begin{enumerate}
+           \item
+               \begin{align}
+                   v_a &= \frac{|B|}{\sqrt{4\pi\rho}}=\frac{4\sci{-6}G}{4 \pi 100 *
+                   1.6\sci{-24} \rm{g}\ \rm{cm^-3}}\\
+                   &= 2.88\sci{6}\cms
+               \end{align}
+           \item
+               \begin{align}
+                   c_s &= \gamma \sqrt{T kb/m}\nn\\
+                   &= 5/3 \sqrt{10^4 K 1.3\sci{-16}erg/K/(1.6\sci{-24}g)}\nn\\
+                   &= 1.5\sci{6}\cms \rm{if\ you\ used\ \gamma=5/3}\nn\\
+                  &= 9.1\sci{5}\cms \rm{if\ you\ used\ \gamma=1\nn}
+               \end{align}
+           \item \begin{align}
+                   \beta&=\frac{P_{gas}}{P_{mag}}=\frac{\rho k/m T}{B^2/8\pi}\\
+                   &= 216
+               \end{align}
+           \item 15km/s = $1.5\sci{6}$cm/s is close to what I got
+               for the sound, and much faster than the Alfven speed.  Thus
+               shocks will dominate the structures over sound and Alfven waves.
+       \end{enumerate}
+
+}
+

@@ -1,0 +1,41 @@
+
+   Spherical accretion is characterized by a velocity field
+    $$\vvec = \frac{\dot{M}}{r^2} \hat{r},$$
+    where $\dot{M}$ is the accretion rate (will find that later in the course).
+    This is, for instance, gas falling onto a small planet.
+    \begin{enumerate}
+      \item \pts{4} Find $\nabla \times \vvec$.   What does that tell you about the field?  
+
+	      \solution{
+          \emph{Solution}
+ 
+
+        $$\nabla\times\vvec = 0$$
+        Possible solutions are taking the derivative, or noting that curls only
+        contain tangential derivatives, and this has only longitudinal
+        variation:  or, by fully taking the curl. (3 pts)
+
+        We learn that this type of flow has not rotational motions.  (1 pt)
+	}
+
+      \item \pts{4} Find $\divv$. What does that tell you about the field?  
+
+\solution{
+         \emph{Solution}
+         $$\nabla\cdot\vvec= \frac{1}{r^2} \dbd{r^2 v_r}{r}  $$
+         plus terms that involve $v_\phi$ and $v_\theta$, which are not present.  
+         \begin{align}
+             \nabla\cdot\vvec = \frac{1}{r^2} \dbd{}{r}\left( r^2
+             \frac{\dot{M}}{r^2} \right) = 4 \pi \dot{M} \delta^3(\vec{r})
+         \end{align}
+ 
+         so there is only divergence at a single point, the origin.
+
+          \red{I didn't take points off for getting the $\delta(r)$ wrong
+          because I had not covered it.}
+          %But do learn this solution.}
+	  }
+
+
+    \end{enumerate}
+

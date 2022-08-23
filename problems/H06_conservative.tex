@@ -1,0 +1,27 @@
+
+   \pts{5} Beginning with the hydro equations, (3.51-3.53, or the previous
+  problem), derive 4.25.  Ignore
+    viscosity ($\mu=0$)  and external forces.  
+
+\solution{
+     \emph{Solution}
+ 
+     Here's a partial sketch.  
+ 
+     $$\dbd{}{t}\left( \rho\epsilon + \half \rho v^2\right)$$
+ 
+     which is derivative we want.  Start with the first term
+ 
+     $$\dbd{}{t} \rho\epsilon = \rho \dbd{\epsilon}{t} + \epsilon \dbd{\rho}{t}$$
+     Expand the first with (3.53), which has an energy advection term, the heat conduction
+     term, and the $pdV$ work term.  Expand the second term with (3.51).  
+ 
+     Then expand the $\dbd{}{t}\half \rho v^2$.  Replace the $\dbd{\rho}{t}$ with
+     the continuity equation, and the $\dbd{\vvec}{t}$ with the equation of
+     motnion (3.52).  
+ 
+     Throughout this process, you have terms that look like $p\nabla\cdot\vvec$.
+     We want things that look like $\nabla\cdot stuff$.  
+     Use $p\nabla\cdot\vvec = \nabla\cdot p\vvec - \vvec\cdot\nabla p$ to get a
+     $$\nabla\cdot stuff$$ term, and a term that will cancel with something else.
+}
