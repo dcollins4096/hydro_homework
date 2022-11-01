@@ -1,6 +1,6 @@
 \pts{4} Berger's equation is Euler's equation without the pressure.  
 \begin{align}
-\dbd{u}{t} + u \dbd{u}{x}=0
+	\dbd{u}{t} + u \dbd{u}{x}=0\label{bergers}
 \end{align}
 where $u$ is velocity (and not constant).
 Use method
@@ -13,3 +13,36 @@ where $m$ and $b$ are constants, then
 u(x,t) = \frac{ b-mx}{1-mt}.
 \end{align}
 At what time does $u=\infty$?
+
+\solution{\emph{Solution}
+
+The equation \ref{bergers} is another way of saying
+\begin{align}
+	\ddbd{u}{t}&=0\\
+	\ddbd{x}{t}&=u
+\end{align}
+so we have converted one PDE into two ODEs. The first one says
+\begin{align}
+	u(x,t) &= const\\
+	&= u(x_0, t_0)
+\end{align}
+The second one says that
+\begin{align}
+	x(t) = u t + x_0,
+\end{align}
+or
+\begin{align}
+	x_0 = x(t) - u t.
+\end{align}
+If we start with
+\begin{align}
+	u(x_0, t_0) = -m x_0 + b
+\end{align}
+then we can plug in $x_0$ and get
+\begin{align}
+	u(x,t) &= -m (x - u t) + b\\
+	u &= \frac{ b - m x}{1-mt}
+\end{align}
+and we see that this blows up when $t=1/m$.
+
+}%solution

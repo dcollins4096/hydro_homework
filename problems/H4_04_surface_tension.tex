@@ -1,0 +1,71 @@
+
+\pts{4} Do problem 7.1 from Chourhuri.
+
+\solution{\emph{Solution}
+
+Two states, $\rho^\prime$ on top, $\rho$ on bottom.
+
+Incompressible and irrotational, so $v=-\nabla \phi$.
+
+The interface is at a position $\xi$.
+
+Start with (7.29)
+$$
+-\dbd{\phi}{t}+\half v^2 + P/\rho + \Phi = 0,
+$$
+and solve for pressure,
+$$
+P = \rho\left(\dbd{\phi}{t}-\half v^2 - \Phi \right)
+$$
+Set the prime and unprime sides equal.  ALSO add
+$$
+T \dbd{^2 \xi}{x^2}
+$$
+get
+$$
+\rho\left(-\dbd{\phi}{t} - U \dbd{\phi}{x} + g \xi\right) =
+\rho^\prime
+\left(-\dbd{\phi^\prime}{t} - U^\prime \dbd{\phi^\prime}{x} + g \xi\right) + T
+\dbd{^2 \xi}{x^2}
+$$
+Use
+\begin{align}
+-\dbd{\phi}{z} &= \dbd{\xi}{t}+U\dbd{\xi}{x}\\
+-\dbd{\p{\phi}}{z} &= \dbd{\xi}{t}+\p{U}\dbd{\xi}{x}
+\end{align}
+and
+\begin{align}
+\phi &= C \exp( i(kx-\omega t) + k z)\\
+\p{\phi} &= \p{C} \exp( i(kx-\omega t) + k z)\\
+\xi  &= A \exp(i(kx-\omega t))
+\end{align}
+to get
+\begin{align}
+i (-\omega + k U)A &= -k C \label{f1}\\
+i (-\omega + k \p{U})A &= k \p{C}. \label{f2}
+\end{align}
+
+The pressure equality equation is then (skipping some steps that are in the
+text)
+\begin{align}
+\rho\left(-\dbd{\phi}{t} - U \dbd{\phi}{x} + g \xi\right) &= 
+\p{\rho} \left( -\dbd{\p{\phi}}{t}-\p{U}\dbd{\p{\phi}}{x}+g \xi\right) + T
+\dbd{^2 \xi}{x^2}.
+\end{align}
+Drop in the fourier modes to get
+\begin{align}
+\rho\left( -i(-\omega+kU)A+gA\right) &=
+\p{\rho}\left(-i(\omega+k\p{U})A+gA\right)+k^2 T A \label{f3}
+\end{align}
+Plug \ref{f1} and \ref{f2} into \ref{f3} (solve for C, \p{C}) and get
+\begin{align}
+\rho\left(-\omega + k U\right)^2 + \p{\rho}\left(-\omega + k \p{U}\right)^2 = k
+g (\rho-\p{\rho}) + T k^3
+\end{align}
+Expand those quadratics.  Collect terms.  Get:
+\begin{align}
+(\rho+\p{\rho}) \omega^2 - 2 k \omega (\rho U + \p{\rho}\p{U}) + k^2(\rho U^2 +
+\p{\rho} U^{\prime 2}) = k g (\rho-\p{\rho}) + k^3 T
+\end{align}
+Plug that into the quadratic formula.  
+}

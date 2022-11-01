@@ -4,10 +4,51 @@ Let us derive sound waves.
 %sound waves.
 \item \pts{3} Begin with $\rho_0$, $P_0$ constant and $v_0=0$.  Linearize
 Continuity and Euler around these quantities
+
+\solution{\emph{Solution}
+Equillibrium Solution:
+\begin{align}
+	\dbd{\rho_0}{t} + \nabla \cdot \rho_0 v_0 &= 0\\
+	\dbd{v_{0,i}}{t} + v_{0,j} \dbd{ }{x_j} v_{0,i} &= -\frac{1}{\rho_0}\dbd{ }{x_i} P_0
+\end{align}
+Send $\rho=\rho_0+\rho_1$, $v=v_0+v_1$ and $P=P_0+P_1$, throw out any second
+order
+\begin{align}
+	\dbd{\rho_1}{t} &= -\dbd{ }{x_j}\rho_0 v_{1,j} \\
+	\dbd{v_{1,i}}{t}  &= -\frac{1}{\rho_0}\dbd{ }{x_i} P_1
+\end{align}
+}
 \item \pts{3} Get rid of Pressure using Density.  What assumptions do you need
 to make?
+
+\solution{\emph{Solution}
+The fluctuation needs to be \emph{adiabatic}. $$\dbd{P}{x_i} = \dbd{\rho}{P}
+\dbd{\rho}{x_i} = c_s^2 \dbd{\rho}{x_i}$$
+}
+
 \item \pts{2} Combine those equations into one equation for density.
+	
+\solution{\emph{Solution}
+\begin{align}
+\dbd{\rho}{t} - c_s^2 \dbd{\rho}{x} = 0.
+\end{align}
+}
+
 \item \pts{3} Use Fourier Analysis to write a dispersion relation for $\omega$
 and $k$.
+
+\solution{\emph{Solution}
+\begin{align}
+-\omega^2 + c_s^2 k^2 = 0
+\end{align}
+}
+
 \item \pts{3} Find the group and phase speed.
+
+\solution{\emph{Solution}
+\begin{align}
+v_p &= \frac{\omega}{k} = c_s^2\\
+v_g &= \dbd{\omega}{k} = c_s^2
+\end{align}
+}
 \end{enumerate}

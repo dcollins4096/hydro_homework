@@ -1,2 +1,30 @@
 \pts{3} Derive the momentum equation (4.42) from Euler and Continuity.
 
+\solution{\emph{Solution}
+Begin with:
+\begin{align}
+\dbd{\rho}{t} + \dbd{ }{x_j} \rho v_j &= 0\\
+\dbd{v_i}{t} + v_j \dbd{ }{x_j} v_i &= -\frac{1}{\rho}\dbd{ }{x_i} P
+\end{align}
+
+What we want is an expression for $\dbd{\rho v_i}{t}$, so start there, use
+product rule, plug in the above:
+\begin{align}
+\dbd{\rho v_i}{t}&= \rho \dbd{v_i}{t} + v_i \dbd{\rho}{t}\\
+&\rho \left( -v_j \dbd{ }{x_j} v_i - \frac{1}{\rho} \dbd{ }{x_i}P\right) +
+v_i \left( -\dbd{ }{x_j} \rho v_j \right)
+\end{align}
+simplify, turn the derivative with respect to $x_i$ into $x_j$ with
+$\delta_{ij}$:
+\begin{align}
+-\left(\rho v_j \dbd{ }{x_j} v_i - \delta_{ij} \dbd{ }{x_j} P - v_i \dbd{ }{x_j}
+\rho v_j \right)
+\end{align}
+Integrate by parts and combine
+\begin{align}
+\dbd{\rho v_i}{t}=-\dbd{ }{x_j} \left( \rho v_i v_j - P \delta_{ij}\right)
+\end{align}
+
+
+}%solution
+
