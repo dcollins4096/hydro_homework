@@ -1,1 +1,41 @@
 \pts{4} Do problem 5.5 from Chourhuri
+
+\solution{
+Begin with
+\begin{align}
+\rho \ddbd{v_i}{t} = -\dbd{ }{x_j}\left(p \delta_{ij} + \pi_{ij}\right)
+\end{align}
+Dot into velocity
+\begin{align}
+v_i \rho \ddbd{v_i}{t} = -v_i \dbd{ }{x_j} p\delta_{ij} -  v_i \dbd{ }{x_j}
+\pi_{ij}
+\end{align}
+Integrate by parts (use product rule backwards), use the $\delta_{ij}$, use
+$\nabla \cdot \vvec$ = 0 and $\dbd{\rho}{t}=0$
+\begin{align}
+\ddbd{}{t}\left( \half \rho v_i v_i \right) = -\dbd{ }{x_j} \left( p v_i
+\delta_{ij}\right) + p \dbd{}{x_j} v_i \delta_{ij} -
+\dbd{}{x_j}\left( v_i \pi_{ij}\right) + \pi_{ij} \dbd{}{x_j} v_i
+\end{align}
+The second term on the right goes away because the delta function turns it into
+$p \nabla\cdot \vvec$.  Then expand the full derivative on the left, and collect
+terms on the right
+\begin{align}
+\dbd{}{t}\left( \half \rho v^2\right) + v_j \dbd{}{x_j}\left(\half \rho v_i^2\right) =
+-\dbd{}{x_j}\left( p v_i \delta_{ij} + v_i \pi_{ij}\right) + \pi_{ij}
+\dbd{v_i}{x_j}
+\end{align}
+Move the second term on the left to the right, use incompressible again
+\begin{align}
+\dbd{}{t}\left( \half \rho v^2\right) = -\dbd{}{x_j}\left( \half \rho v_j v^2 +
+v_j p  + v_i \pi_{ij}\right) + \pi_{ij} \dbd{v_i}{x_j}.
+\end{align}
+This is of the form 
+\begin{align}
+\dbd{Q}{t} + \nabla \cdot F = D
+\end{align}
+Without the right hand side, $D$, this states that $Q$ is conserved.  The right
+hand side (not in a gradient) is not part of the motion of $Q$, and must be the
+dissipation (change in time of $Q$, here kinetic energy)
+}
+
